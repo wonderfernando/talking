@@ -233,25 +233,27 @@ const messagesData : IMessage[] = [
 
 
 ]
-
+/*
 const me : IAuthor = {
    id:"1",
    name : "Fernano Wonder",
    email: "wonder@gmail.com",
    avatar: "./public/avatar.jpg"
 }
-
+*/
 function Home() {
-   const [author , setAuthor] = useState<IAuthor>(me)
+  // const [author , setAuthor] = useState<IAuthor>(me)
   
    const [messages , setMessages] = useState<IMessage[]>(messagesData)
-
+   function setMessage() {
+      setMessages([])
+   }
    
 
     return (
       <OnPageContextProvider>
          <div className="overflow-hidden px-4 flex min-h-screen w-full bg-zinc-800 relative">
-            <SideBar messages={messages}/>
+            <SideBar messages={messages} setMess={setMessage}/>
             <Content/>
          </div>
       </OnPageContextProvider>

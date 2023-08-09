@@ -1,7 +1,7 @@
 import { List ,MagnifyingGlass} from "phosphor-react"
 import avatar from "../../assets/avatar.jpg"
 import { useOnPageContext } from "../../Context/OnPageContext"
-import {useState,useEffect} from "react"
+import {useEffect} from "react"
 
 interface IAuthor{
     id: string,
@@ -16,10 +16,8 @@ interface IAuthor{
     destinyAuthor: IAuthor,
     createAt: Date
  }
-function SideBar({messages} : {messages:IMessage[]}) {
+function SideBar({messages, setMess} : {messages:IMessage[], setMess: ()=> void}) {
  const {changePage} = useOnPageContext()
-const[last,setLast] = useState<Array<Array<IMessage>>>([])
-const[lasts,setLasts] = useState<Array<IMessage>>([])
 
 
     useEffect(()=>{
@@ -49,18 +47,19 @@ const[lasts,setLasts] = useState<Array<IMessage>>([])
         })*/
     },[])
 
-const lastMessages = messages.map(message=> {
+/*const lastMessages = messages.map(message=> {
             if (message.author.id ==="1" || message.destinyAuthor.id==="1" ) {
                 
             }
         }
-    )
+    )*/
 
 
 
  
     function handleViewMessage() {
         changePage({title: "message"})
+        setMess()
     }
     return (
      <div className="w-96 flex flex-col max-h-screen  bg-gray-800 border-r-2 border-gray-800 max-md:w-screen ">
