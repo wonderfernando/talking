@@ -56,14 +56,14 @@ const messagesData : IMessage[] = [
       id : "2",
       name: "Maria de Lemos",
       email: "lemos@gmail.com",
-      avatar: "./public/avatar-black-woman.jpg"
+      avatar: "../public/avatar-black-woman.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "../public/avatar.jpg"
    },
    message: "Tas bem fernando",
 },
@@ -228,10 +228,6 @@ const messagesData : IMessage[] = [
    },
    message: "Tropa!",
 }
-
-
-
-
 ]
 /*
 const me : IAuthor = {

@@ -26,7 +26,6 @@ function SideBar({messages, setMess} : {messages:IMessage[], setMess: ()=> void}
         let newPush :any=[]
         myMessages.map(m1=>{
             myMessages.map(m2=>{
-    
                if (m1.author.id===m2.destinyAuthor.id && m1.destinyAuthor.id===m2.author.id || m1.author.id=== m2.destinyAuthor.id) {
                    newPush = [...newPush, m2]
                 }
