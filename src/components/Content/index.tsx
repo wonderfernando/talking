@@ -3,7 +3,20 @@ import avatar from "../../assets/avatar-women.jpg"
 import avatar1 from "../../assets/avatar.jpg"
 import { useOnPageContext } from "../../Context/OnPageContext"
 
-function Content() {
+interface IAuthor{
+  id: string,
+  name: string,
+  email: string
+  avatar: string
+}
+interface IMessage{
+  id: string
+  author: IAuthor,
+  message: string,
+  destinyAuthor: IAuthor,
+  createAt: Date
+}
+function Content({messages} :{messages: IMessage[]}) {
     const {page,changePage} = useOnPageContext()
 
     function handleClickBack() {  
@@ -23,29 +36,21 @@ function Content() {
           <button className="p-4  hover:bg-gray-600 hover:text-white transition-all rounded-sm"> <List /></button>
         </div>
 
-      <div className="p-4 flex-1 scrollbar overflow-auto h-10">
+      <div className="p-4 flex-1 scrollbar bg-slate-200 overflow-auto h-10">
         <div className="flex flex-col gap-2">
-          <div className="flex gap-4 items-center">
-            <img src={avatar} className=" w-6 h-6 rounded-full" alt="" />
-            <div className="flex flex-col lg:max-w-2xl bg-slate-600 p-4 text-gray-300 rounded-lg">
-              <strong className="">Maria <span className="font-normal text-xs">lemos@gmail.com</span></strong>
-              <span >Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+          {
+            messages && messages.map(message => (
+              <div className="flex gap-4 items-center">
+                <img src={avatar} className=" w-6 h-6 rounded-full" alt="" />
+                <div className="flex flex-col lg:max-w-2xl bg-slate-600 p-4 text-gray-300 rounded-lg">
+                  <strong className="">{message.author.name} <span className="font-normal text-xs">{message.author.email}</span></strong>
+                  <span >{message.message}</span>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-4 items-center">
-            <img src={avatar} className=" w-6 h-6 rounded-full" alt="" />
-            <div className="flex flex-col lg:max-w-2xl bg-slate-600 p-4 text-gray-300 rounded-lg">
-              <strong>Maria <span>lemos@gmail.com</span></strong>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque hic ea sunt aliquid aperiam obcaecati assumenda impedit! Quis incidunt tempora eaque esse fugit animi aperiam quibusdam vitae molestiae praesentium!</span>
-            </div>
-          </div>
-          <div className="flex gap-4 items-center">
-            <img src={avatar} className=" w-6 h-6 rounded-full" alt="" />
-            <div className="flex flex-col bg-slate-600 p-4 lg:max-w-2xl text-gray-300 rounded-lg">
-              <strong>fernando <span>wonder@gmail.com</span></strong>
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque hic ea sunt aliquid aperiam obcaecati assumenda impedit! Quis incidunt tempora eaque esse fugit animi aperiam quibusdam vitae molestiae praesentium!</span>
-            </div>
-          </div>
+            ))
+          }
+         
+      
 {/* minhas mensagens*/}
           <div className="flex gap-4 items-center flex-row-reverse">
             <img src={avatar1} className=" w-6 h-6 rounded-full" alt="" />

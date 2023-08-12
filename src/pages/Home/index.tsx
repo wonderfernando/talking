@@ -241,16 +241,17 @@ function Home() {
   // const [author , setAuthor] = useState<IAuthor>(me)
   
    const [messages , setMessages] = useState<IMessage[]>(messagesData)
+   const [messagesOn , setmessagesOn] = useState<IMessage[]>([])
    function setMessage() {
-      setMessages([])
+      setMessages(messagesData)
    }
    
 
     return (
       <OnPageContextProvider>
-         <div className="overflow-hidden px-4 flex min-h-screen w-full bg-zinc-800 relative">
+         <div className="overflow-hidden flex min-h-screen w-full bg-zinc-800 relative">
             <SideBar messages={messages} setMess={setMessage}/>
-            <Content/>
+            <Content messages={messagesOn}/> 
          </div>
       </OnPageContextProvider>
 
