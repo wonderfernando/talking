@@ -28,7 +28,7 @@ function SideBar({messages, setMess} : {messages:IMessage[], setMess: ()=> void}
  
     function handleViewMessage() {
         changePage({title: "message"})
-       
+       setMess()
     }
     return (
      <div className="w-96 relative flex flex-col max-h-screen  bg-slate-100 border-r-2 border-gray-800 max-md:w-screen ">

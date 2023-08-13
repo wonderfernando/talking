@@ -244,6 +244,7 @@ function Home() {
    const [messagesOn , setmessagesOn] = useState<IMessage[]>([])
    function setMessage() {
       setMessages(messagesData)
+      setmessagesOn(messages)
    }
    
 
