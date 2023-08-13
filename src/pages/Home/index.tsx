@@ -24,14 +24,14 @@ const messagesData : IMessage[] = [
          id : "1",
          name: "fernando",
          email: "fernando",
-         avatar: "../../../public/avatar.jpg"
+         avatar: "/avatar.jpg"
       },
       createAt: new Date(),
       destinyAuthor: {    
          id : "2",
          name: "Maria de Lemos",
          email: "lemos@gmail.com",
-         avatar: "../../../public/avatar-black-woman.jpg"
+         avatar: "/avatar-black-woman.jpg"
       },
       message: "Boa noite",
 },{
