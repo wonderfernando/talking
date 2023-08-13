@@ -40,14 +40,14 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {    
       id : "2",
       name: "Maria de Lemos",
       email: "lemos@gmail.com",
-      avatar: "./public/avatar-black-woman.jpg"
+      avatar: "/avatar-black-woman.jpg"
    },
    message: "Wey é como",
 },{
@@ -56,14 +56,14 @@ const messagesData : IMessage[] = [
       id : "2",
       name: "Maria de Lemos",
       email: "lemos@gmail.com",
-      avatar: "../public/avatar-black-woman.jpg"
+      avatar: "/avatar-black-woman.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "../public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Tas bem fernando",
 },
@@ -73,14 +73,14 @@ const messagesData : IMessage[] = [
       id : "2",
       name: "Maria de Lemos",
       email: "lemos@gmail.com",
-      avatar: "./public/avatar-black-woman.jpg"
+      avatar: "/avatar-black-woman.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Trouxe Pão",
 },{
@@ -89,14 +89,14 @@ const messagesData : IMessage[] = [
       id : "2",
       name: "Maria de Lemos",
       email: "lemos@gmail.com",
-      avatar: "./public/avatar-black-woman.jpg"
+      avatar: "/avatar-black-woman.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Compra só gasosa",
 },{
@@ -105,14 +105,14 @@ const messagesData : IMessage[] = [
       id : "3",
       name: "Josue Martins",
       email: "Martins@gmail.com",
-      avatar: "./public/avatar-man-young.jpg"
+      avatar: "/avatar-man-young.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Mano, o cumbo então",
 },{
@@ -121,14 +121,14 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "3",
       name: "Josue Martins",
       email: "Martins@gmail.com",
-      avatar: "./public/avatar-man-young.jpg"
+      avatar: "/avatar-man-young.jpg"
    },
    message: "Tou a trazer a cena mano",
 },{
@@ -137,14 +137,14 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "4",
       name: "simao julio",
       email: "julio@gmail.com",
-      avatar: "./public/avatar-man-young.jpg"
+      avatar: "/avatar-man-young.jpg"
    },
    message: "Amanhã tem prova de fisica, avisa na bia pra trazer folha de prova",
 },{
@@ -153,14 +153,14 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "5",
       name: "Mendeliev Newton",
       email: "newton@gmail.com",
-      avatar: "public/avatar-women.jpg"
+      avatar: "/avatar-women.jpg"
    },
    message: "Tou no banco",
 },{
@@ -169,13 +169,13 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "6",
       name: "Jonata Test",
-      avatar: "./public/avatar-women.jpg",
+      avatar: "/avatar-women.jpg",
       email: "teste@gmail.com"
    },
    message: "Sai dai maluco",
@@ -184,7 +184,7 @@ const messagesData : IMessage[] = [
    author : {
       id : "6",
       name: "Jonata Test",
-      avatar: "./public/avatar-women.jpg",
+      avatar: "/avatar-women.jpg",
       email: "teste@gmail.com"
    },
    createAt: new Date(),
@@ -192,7 +192,7 @@ const messagesData : IMessage[] = [
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Trouxe o duck pra adestrar",
 },{
@@ -201,14 +201,14 @@ const messagesData : IMessage[] = [
       id : "12",
       name: "Jairo Chico",
       email: "chico@gmail.com",
-      avatar: "./public/avatar-man-young.jpg"
+      avatar: "/avatar-man-young.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "1",
       name: "fernando",
       email: "fernando",
-      avatar: "./public/avatar.jpg"
+      avatar: "/avatar.jpg"
    },
    message: "Tropa! é como",
 },{
@@ -217,14 +217,14 @@ const messagesData : IMessage[] = [
       id : "12",
       name: "Jairo Chico",
       email: "chico@gmail.com",
-      avatar: "./public/avatar-man-young.jpg"
+      avatar: "/avatar-man-young.jpg"
    },
    createAt: new Date(),
    destinyAuthor: {
       id : "2",
       name: "Maria Lemos",
       email: "lemos",
-      avatar: "./public/avatar-women.jpg"
+      avatar: "/avatar-women.jpg"
    },
    message: "Tropa!",
 }
